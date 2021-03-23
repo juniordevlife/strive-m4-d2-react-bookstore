@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 // Components
 import NavBar from "./components/Navbar";
-import HeaderJumbotron from "./components/HeaderJumbotron";
+import Hero from "./components/Hero";
 import BookCard from "./components/BookCard";
 import Footer from "./components/Footer";
 
@@ -25,10 +25,10 @@ class App extends Component {
         </header>
         <main>
           <Container fluid>
-            <section className="hero=wrapper">
-              <HeaderJumbotron />
+            <section>
+              <Hero />
             </section>
-            <section className="releases-wrapper">
+            <section>
               <h3>Releases</h3>
               <Row noGutters="false">
                 {this.state.historyBooks.map((book, i) => {
